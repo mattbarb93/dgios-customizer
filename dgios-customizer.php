@@ -30,6 +30,24 @@ function dgios_customizer()
         100                                 //Priority Order. Where will it display on the menu? All the way to the top? Bottom? The higher the number, the lower the button will be
     );
 
+    add_submenu_page(
+        'dgios-customizer', //Name of the page where you wanna put it on
+        __( 'Navigation Gallery', 'dgios-customizer' ), //Title
+        __( 'Nav Gallery', 'dgios-customizer' ), //What will appear in the menu
+        'manage_options', //User options
+        'nav-gallery', //URL Slug. Keep something similar to menu slug for good practice
+        'dgios_customizer_settings_page_markup' //Function for HTML build
+      );
+    
+      add_submenu_page(
+        'dgios-customizer',
+        __( 'Deal of the Week', 'dgios-customizer' ),
+        __( 'Deal of Week', 'dgios-customizer' ),
+        'manage_options',
+        'deal-of-the-week',
+        'dgios_customizer_settings_page_markup'
+      );
+
 }
 add_action( 'admin_menu', 'dgios_customizer' ); //Gets called whenever the admin menu is built. 
 
