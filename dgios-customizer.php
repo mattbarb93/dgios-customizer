@@ -47,6 +47,22 @@ function dgios_customizer()
         'deal-of-the-week',
         'dgios_customizer_settings_page_markup'
       );
+      add_submenu_page(
+        'dgios-customizer',
+        __( 'Deals', 'dgios-customizer' ),
+        __( 'Deals', 'dgios-customizer' ),
+        'manage_options',
+        'deals',
+        'dgios_customizer_settings_page_markup'
+      );
+      add_submenu_page(
+        'dgios-customizer',
+        __( 'Favorite Dishes', 'dgios-customizer' ),
+        __( 'Fav Dishes', 'dgios-customizer' ),
+        'manage_options',
+        'fav-dishes',
+        'dgios_customizer_settings_page_markup'
+      );
 
 }
 add_action( 'admin_menu', 'dgios_customizer' ); //Gets called whenever the admin menu is built. 
