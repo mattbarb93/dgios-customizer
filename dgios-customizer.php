@@ -79,9 +79,21 @@ function dgios_customizer_settings_page_markup()
     <!-- Write whatever HTML you need -->
     <div class="wrap"> 
       <h1><?php esc_html_e( get_admin_page_title() ); ?></h1> <!--get admin page title function gets the Name of the page-->
-      <p><?php esc_html_e( 'Some content.', 'wpplugin' ); ?></p>
+      <p><?php esc_html_e( 'Some content.', 'dgios-customizer' ); ?></p>
     </div>
     <?php
 }
+
+// Add a link to your settings page in your plugin
+function dgios_add_settings_link( $links ) {
+    $settings_link = '<a href="admin.php?page=dgios-customizer">' . __( 'Settings', 'dgios-customizer' ) . '</a>';
+    array_push( $links, $settings_link );
+  	return $links;
+}
+$filter_name = "plugin_action_links_" . plugin_basename( __FILE__ );
+add_filter( $filter_name, 'dgios_add_settings_link' );
+
+?>
+
 
 ?>
