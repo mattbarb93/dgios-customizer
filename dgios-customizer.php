@@ -19,11 +19,15 @@ if ( ! defined( 'WPINC' ) ) {
 }
 define( 'WPPLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
+define( 'WPPLUGIN_URL', plugin_dir_url( __FILE__ ) );
+
 include( plugin_dir_path( __FILE__ ) . 'includes/dgios-customizer-styles.php');
 
 include( plugin_dir_path( __FILE__ ) . 'includes/dgios-customizer-scripts.php');
 
 include( plugin_dir_path( __FILE__ ) . 'includes/dgios-customizer-menus.php');
+
+include( plugin_dir_path( __FILE__ ) . 'includes/dgios-customizer-options.php');
 
 
 

@@ -1,4 +1,4 @@
-<?php 
+<?php
 function dgios_customizer()
 {
     add_menu_page(
@@ -55,14 +55,7 @@ function dgios_customizer_settings_page_markup()
     if ( !current_user_can('manage_options') ) {
       return;
     }
-    ?>
-
-    <!-- Write whatever HTML you need -->
-    <div class="wrap"> 
-      <h1><?php esc_html_e( get_admin_page_title() ); ?></h1> <!--get admin page title function gets the Name of the page-->
-      <p><?php esc_html_e( 'Some content.', 'dgios-customizer' ); ?></p>
-    </div>
-    <?php
+    include( WPPLUGIN_DIR . 'admin/settings-page.php');
 }
 
 // Add a link to your settings page in your plugin
