@@ -1,7 +1,7 @@
 <?php
 
 // Load CSS on all admin pages
-function dgios_customizer_admin_styles() {
+function dgios_customizer_admin_styles( $hook ) {
 
   wp_enqueue_style(
     'dgios-customizer-admin',
@@ -9,6 +9,10 @@ function dgios_customizer_admin_styles() {
     [],
     time()
   );
+
+  if( 'toplevel_page_dgios-customizer' == $hook ) {
+    wp_enqueue_style( 'dgios-customizer-admin-admin' );
+  }
 
 }
 add_action( 'admin_enqueue_scripts', 'dgios_customizer_admin_styles' );
