@@ -1,10 +1,10 @@
 <?php
 
-function wpplugin_settings() {
+function dgios_customizer_settings() {
 
   // If plugin settings don't exist, then create them
-  if( !get_option( 'wpplugin_settings' ) ) {
-      add_option( 'wpplugin_settings' );
+  if( !get_option( 'dgios_customizer_settings' ) ) {
+      add_option( 'dgios_customizer_settings' );
   }
 
   // Define (at least) one section for our fields

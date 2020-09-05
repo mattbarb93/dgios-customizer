@@ -30,6 +30,8 @@ include( plugin_dir_path( __FILE__ ) . 'includes/dgios-customizer-menus.php');
 
 include( plugin_dir_path( __FILE__ ) . 'includes/dgios-customizer-options.php');
 
+include( plugin_dir_path( __FILE__ ) . 'includes/dgios-customizer-settings-fields.php');
+
 
 
 
