@@ -5,7 +5,7 @@ function dgios_customizer_admin_styles( $hook ) {
 
   wp_enqueue_style(
     'dgios-customizer-admin',
-    WPPLUGIN_URL . 'admin/css/dgios-customizer-admin-style.css',
+    WPPLUGIN_URL . 'templates/admin/css/dgios-customizer-admin-style.css',
     [],
     time()
   );
@@ -23,7 +23,7 @@ function dgios_customizer_frontend_styles() {
 
   wp_enqueue_style(
     'dgios-customizer-frontend',
-    WPPLUGIN_URL . 'frontend/css/dgios-customizer-front-end-style.css',
+    WPPLUGIN_URL . 'templates/frontend/css/dgios-customizer-front-end-style.css',
     [],
     time()
   );
