@@ -22,3 +22,7 @@ function dgios_customizer_options() {
 
 }
 add_action( 'admin_init', 'dgios_customizer_options' );
+
+
+
+    

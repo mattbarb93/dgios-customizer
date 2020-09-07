@@ -33,7 +33,4 @@ include( plugin_dir_path( __FILE__ ) . 'includes/dgios-customizer-options.php');
 include( plugin_dir_path( __FILE__ ) . 'includes/dgios-customizer-settings-fields.php');
 
 
-
-
-
 ?>
