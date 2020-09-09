@@ -101,6 +101,10 @@ function navigation_gallery_media_upload() {
 
 
   echo '<input id="background_image" type="text" name="background_image" value="' . $custom_text . '" />
+<input id="upload_image_button" type="button" class="button-primary" value="Insert Image" /> <br>';
+  echo '<input id="background_image" type="text" name="background_image" value="' . $custom_text . '" />
+<input id="upload_image_button" type="button" class="button-primary" value="Insert Image" /> <br>';
+  echo '<input id="background_image" type="text" name="background_image" value="' . $custom_text . '" />
 <input id="upload_image_button" type="button" class="button-primary" value="Insert Image" />';
   
 }
